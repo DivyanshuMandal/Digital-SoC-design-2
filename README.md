@@ -72,7 +72,7 @@ After that we code the software using C,C++,VB,Java etc. in the hexi-decimal for
 So, this is the flow - Apps to System Software to OS to Compiler to the Assembler and at last, to the Hardware.
 
 Let us understand this with an example-
-![Screenshot (55)](https://github.com/user-attachments/assets/28b92a4b-95ad-4765-a210-00a8e52c21e6)
+
 
 This is a model of a stopwatch, but it is just to show the code of the assembler and the compiler. The compiler converts the code into the used language of the hardware, and then the assembler will convert it into binary for the hardware, and then code will be implemented on the hardware. So this is the way a stopwatch should behave, if the code is written correctly. 
 In this course we have mostly focused on RISC-V, but to understand it fully, we have to understand many terms and terminologies.
@@ -233,4 +233,73 @@ ii> Timing Verification
 
 We have learnt the simplified terms, but the problem is tougher when using Open-source EDA.
 
+- Tools Qualification?
+  
+- Tools Calibration?
+  
+- Missing Tools?
 
+For this to implement on the ASIC flow but is very hard to do it - but now, we have introduced openLANE by Apache 2.0
+
+OpenLane is a open-source easy to use software and is open-sourced, if you keep the copyrights and credits intact.
+
+- This started as an Open-Source Tape-out experiment
+
+- striVe is a family of everything open SoCs. Open PDK, Open RTL, Open EDA etc. The entire striVe family is shown here-
+  ![Screenshot (71)](https://github.com/user-attachments/assets/2be2f630-0a1b-4cc9-9c3b-4d3ea563b1e2)
+
+The main goal of OpenLANE is to-
+
+- Produce a clean GDSII with no human intervention (No-Human-In-The-Loop)
+
+Clean means -
+
+- No LVS violations
+  
+- No DRC violations
+  
+- Timing violations? WIP!!
+
+It is also tuned for SkyWater 130nm Open PDK 
+
+- Also supports XFAB180 and GF130G
+
+It is also Containerised, which means- 
+
+- It's functional out-of-the-box
+
+- Instructions to build and run natively will follow
+
+OpenLANE can be used to harden macros and chips 
+
+There are 2 modes of operation:
+
+- Autonomous
+- Interactive
+
+OpenLANE has a very nice feature which is known as Design Space Exploration-
+
+- It can find the best set of  flow configurations
+
+Have a lot of design examples-
+
+- 43 designs with their best configurations
+- More will be added soon!
+
+**Introduction to OpenLANE detailed ASIC design Flow**
+
+![Screenshot (72)](https://github.com/user-attachments/assets/f81b702c-de46-450b-a99c-aff8233fd251)
+
+As we can see here this flow chart has a lot of components-
+
+It starts with the Design RTL and ends with the GDSII
+
+But, what's the LEC yosys?
+
+When a metal wire segment is fabricated, it can act as an actenna
+
+- Reactive ion etching causes charges to accumalate on the wire.
+  
+- Transistor gates can get damaged during fabrication.
+
+ 
