@@ -72,7 +72,7 @@ After that we code the software using C,C++,VB,Java etc. in the hexi-decimal for
 So, this is the flow - Apps to System Software to OS to Compiler to the Assembler and at last, to the Hardware.
 
 Let us understand this with an example-
-![image](https://github.com/user-attachments/assets/9a984467-b3f4-4d72-8062-da4190dad156)
+![Screenshot (55)](https://github.com/user-attachments/assets/28b92a4b-95ad-4765-a210-00a8e52c21e6)
 
 This is a model of a stopwatch, but it is just to show the code of the assembler and the compiler. The compiler converts the code into the used language of the hardware, and then the assembler will convert it into binary for the hardware, and then code will be implemented on the hardware. So this is the way a stopwatch should behave, if the code is written correctly. 
 In this course we have mostly focused on RISC-V, but to understand it fully, we have to understand many terms and terminologies.
@@ -89,6 +89,26 @@ There is more to the travels between the assembler to the hardware. The hardware
 
 **SoC design using OpenLANE**
 
+For digital ASIC design we need three fundamentals-
+![Screenshot (59)](https://github.com/user-attachments/assets/83a147fe-ed90-4b37-a49d-696cd2c59347)
+
+<ins>EDA tools</ins> - Electronic design automation (EDA) tools are software programs that help design and analyze chips and other electronic systems.
+
+<ins>RTL designs</ins> - Register-transfer-level (RTL) design is a step in the process of designing digital circuits for chips.
+
+<ins>PDK Files</ins> - PDK data in chip design is a collection of files that describe a semiconductor process and are used to design integrated circuits (ICs). PDK stands for "process design kit".
+
+Digital, open-source ASIC design has been a dream for many years. Open-source PDKs,RTLs and EDAs. There are hundreds of open-source RTLs, like Github.org, librecores.org, opencores.org. There are some open-source EDA tools too, like Qflow, OpenROAD, OpenLANE etc.
+But before we see more open-source PDK tools, we have to learn about PDKs first.
+
+1>What is a PDK?
+
+Ans. i> In the "Age of Gods" the design of an IC was tightly integrated with the manufacturing process available within each company-
+
+a> Those who controlled the physics controlled the whole creative agenda!
+
+ii> Lynn Conway and Carver Mead envisioned the need for seperating the design from technology 
+a> Pioneered the "structured" methodology based on the $/lambda$
 
 
 
