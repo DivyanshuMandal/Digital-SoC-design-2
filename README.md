@@ -1,4 +1,4 @@
-### Digital-SoC-design-2
+### Digital SoC design 
 **Introduction to QFN-48 package,chip,pads,core,die and IPs**
 
 
@@ -13,6 +13,7 @@ The process to make this is just like this-
 But we are not here for arduino making or SoC design, we are here for chip design! So were are only going to learn(and look inside) about the bottom left corner of the Arduino.
 Those just look like these (Rough implementation of that)-
 ![Screenshot (47)](https://github.com/user-attachments/assets/14cb53ac-9b0e-43e5-8edb-49fd4acd9849)
+
 This is a QFN-48 (Quad Flat No-leads). Through learning, we will learn that it is called as a package ,not a chip
 
 
@@ -34,10 +35,18 @@ There are also some other parts of a package. The're shown in the given image-
 
 <ins>Core</ins>  - In chip design, a core is a self-contained processing unit that can perform computations and execute instructions independently.
 
-So as, we have learnt about those we will look how a sample SoC or a sample chip looks like-
+So as, we have learnt about those words, we will look how a sample SoC or a sample chip looks like-
 ![Screenshot (50)](https://github.com/user-attachments/assets/ade220e7-a2d2-4836-b2e1-aca4554bab21)
 
-<ins>Foundry IPs</ins> - Foundry IPs are reusable design modules that are used in chip design and manufactured by foundries.
+
+The labelled parts are known as Foundry IPs
+<ins>Foundry IPs</ins> - Foundry IPs are reusable design modules that are used in chip design and manufactured by foundries.Foundry IPs are a critical part of chip design. They carry the most useful things on a chip. A foundry is like a factory in a package and have a lot machines. Physical SoC designers work heavily on those machines.
+
+There is 1 more part of a package. They are known as macros-
+
+![Screenshot (51)](https://github.com/user-attachments/assets/a1839cbd-642b-485f-bd29-a270d6873bba)
+
+**Introduction to RISC-V**
 
 
 
