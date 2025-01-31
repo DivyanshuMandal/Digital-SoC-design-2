@@ -151,15 +151,86 @@ Yes, you can say that this is a simplified RTL2GDS flow.
 
 The plans to the simplified RTL to GDSII are shown as here-
 
-a> Synthesis                  b> Clock tree synthesis                  c> Floor/Power Planning
+a> Synthesis                  
 
-d> Routing                    e> Placement                             f> Sign Off
+b> Clock tree synthesis                  
 
-a> Synthesis - Converts RTL to a circuit out of components from the standard cell library(SCL)-
+c> Floor/Power Planning
+
+d> Routing                   
+
+e> Placement                            
+
+f> Sign Off
+
+a> <ins>Synthesis</ins> - Converts RTL to a circuit out of components from the standard cell library(SCL)-
 ![Screenshot (61)](https://github.com/user-attachments/assets/a979c348-5caf-4a20-ab11-444a27f5828b)
 
+Standard cells have a regular layout.
+![Screenshot (62)](https://github.com/user-attachments/assets/28c2b61a-41b7-4a45-8ab1-1be9ff650d1c)
 
+Each has different views and models - 
 
+i> Electrical, HDL, SPICE,
 
+ii> Layout(Abstract and Detailed)
+
+iii>...
+
+b> <ins>Floor and Power planning</ins> - In chip design, "floor planning" refers to the initial layout of a chip, defining the placement and size of major functional blocks (like memory, logic units, I/O pads) to optimize chip area and wire length. There are 2 types of floor planning. 
+
+i> Chip Floor Planning - Partition the chip die between different system buiding blocks and place the I/O pads.
+![Screenshot (63)](https://github.com/user-attachments/assets/6bc90966-7465-4d28-9ba9-419bfd410372)
+
+ii> Macro- Floor Planning - In this type, it defines the dimensions, pin location, and also defines the rows in the hardware.
+![Screenshot (64)](https://github.com/user-attachments/assets/7b5de412-ab0b-491b-942a-8b5d120f9d71)
+
+<ins>Power Planning</ins> - Power planning involves designing the power distribution network to ensure every part of the chip receives a stable and sufficient power supply.
+
+c> <ins>Placement</ins> - Place the cells on floorplan rows, aligned with the sites.
+![Screenshot (65)](https://github.com/user-attachments/assets/d5d13397-1f4f-43fd-89e9-03b4747fc892)
+
+Placement can be done in 2 types - Global and Detailed
+
+i> Global placement - Random placement like this-
+![Screenshot (66)](https://github.com/user-attachments/assets/f3fe7a90-1a1d-432c-9dff-36daf7383a28)
+
+ii> Detailed Placement - Detailed placement, like this-
+![Screenshot (66)](https://github.com/user-attachments/assets/a606dcdd-a996-4e48-b307-7bb0054555ba)
+
+d> <ins>Clock Tree synthesis</ins> - To create a clock distribution network-
+i> Deliver the clock to all sequential elements (For.eg; FF)
+
+ii> With minimum skew (0 is hard to achieve)
+
+iii> And in a good shape.
+
+iv> Usually in tree form.
+![Screenshot (67)](https://github.com/user-attachments/assets/88effd99-c272-47b9-af89-9c43e7676220)
+
+v> Implement the interconnect using the avaible metal layers.
+![Screenshot (70)](https://github.com/user-attachments/assets/4d456333-915e-4752-b66e-1ebdaa335aef)
+
+e> <ins>Routing</ins> - i> Metal tracks form a routing grid
+
+ii> Routing Grid is huge
+
+iii> Divide and Conquer
+
+- Global routing: Generates routing guides.
+
+- Detailed Routing: Uses the Routing guides to implement the actual wring
+
+f> <ins>Sign Off</ins> - i> Physical verifications
+
+- Design rules checking (DRC)
+
+- Layout vs. Schematic (LVS)
+
+ii> Timing Verification
+
+- Static Timing Analysis
+
+We have learnt the simplified terms, but the problem is tougher when using Open-source EDA.
 
 
