@@ -339,7 +339,14 @@ Then-
 
 • Extracted SPICE by Magic vs. Verilog netlist
 
+**Coding in Linux**
 
+There are some shortcuts in the linux terminal-
+
+i> cd(change directory)- It just changes the directory of the terminal.
+![image](https://github.com/user-attachments/assets/178b1473-aa81-4355-8e4c-70f4302383d3)
+
+ 
 
 
 
