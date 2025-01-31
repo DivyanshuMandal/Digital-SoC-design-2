@@ -108,7 +108,56 @@ Ans. i> In the "Age of Gods" the design of an IC was tightly integrated with the
 a> Those who controlled the physics controlled the whole creative agenda!
 
 ii> Lynn Conway and Carver Mead envisioned the need for seperating the design from technology 
-a> Pioneered the "structured" methodology based on the $/lambda$
+
+a> Pioneered the "structured" methodology based on the lambda-based rules.
+
+iii> Since then, we started to see Pure Play Fabs and Fabless design companies.
+
+iv> PDK = the interface between the FAB and the designers
+
+v> PDK = Process Design Kit
+
+vi> Collection of files used to model a fabrication process for the EDA tools used to design an IC-
+
+a> Process design rules- DRC,LVS,PEX
+
+b> Device modules 
+
+c> Digital Standard Cell libraries 
+
+d> I/O libraries
+
+e> ...
+
+But still open-source PDKs are still a problem - of the past. A few months ago Google and Skywater produced their first open-source PDK - FOSS 130nm Production PDK in June 30, 2020. 
+
+But, 130nm still in use?
+
+Ans. Yes these are still used! They have made this configuration because to make it more accesible 
+
+Still, are 130nm fast?
+
+Ans. Yes! Intel's P4EE (Pentium 4 Extreme Edition) has a speed of about 3.46 G.hz per clock! A more pipelined version can achieve a good 1 G.hz per clock.
+
+The ASIC design objective is RTL to GDSII- also called as automated PnR or Physical Implementation.
+
+**Simplified RTL2GDS flow**
+
+Let us look at this image-
+
+![Screenshot (60)](https://github.com/user-attachments/assets/85bd8c69-8c0d-43ec-8d72-8fef9b06388d)
+
+Yes, you can say that this is a simplified RTL2GDS flow.
+
+The plans to the simplified RTL to GDSII are shown as here-
+
+a> Synthesis                  b> Clock tree synthesis                  c> Floor/Power Planning
+
+d> Routing                    e> Placement                             f> Sign Off
+
+a> Synthesis - Converts RTL to a circuit out of components from the standard cell library(SCL)-
+![Screenshot (61)](https://github.com/user-attachments/assets/a979c348-5caf-4a20-ab11-444a27f5828b)
+
 
 
 
