@@ -346,7 +346,20 @@ There are some shortcuts in the linux terminal-
 i> cd(change directory)- It just changes the directory of the terminal.
 ![image](https://github.com/user-attachments/assets/178b1473-aa81-4355-8e4c-70f4302383d3)
 
+This results in changing the directory, like this-
+![image](https://github.com/user-attachments/assets/fb5c25d8-8c79-4ea7-b398-e81b1ba9a44c)
+
+ii> ls -ltr (list all the items of that directory)- Lists all the items in the directory
+![image](https://github.com/user-attachments/assets/39eb63ac-d667-423b-a992-4fbbadbea6c0)
+
+The outcome is that it lists all the items in chronological order-
+![image](https://github.com/user-attachments/assets/8413439f-af2c-47c5-a160-ba879772ea58)
+
+iii> ls --help : If you just want to know more about Linux
+![image](https://github.com/user-attachments/assets/70da2c89-ca75-4d8d-94c7-d96e18d2022c)
  
+As we can see, the command is showing a wealth of information!-
+![image](https://github.com/user-attachments/assets/2e607aa7-47e9-4752-bbba-0293a4792a46)
 
 
 
