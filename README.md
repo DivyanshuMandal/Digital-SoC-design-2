@@ -72,6 +72,8 @@ After that we code the software using C,C++,VB,Java etc. in the hexi-decimal for
 So, this is the flow - Apps to System Software to OS to Compiler to the Assembler and at last, to the Hardware.
 
 Let us understand this with an example-
+![Screenshot (55)](https://github.com/user-attachments/assets/dc561e11-4f4a-4b3e-b29e-675b537e5725)
+
 
 
 This is a model of a stopwatch, but it is just to show the code of the assembler and the compiler. The compiler converts the code into the used language of the hardware, and then the assembler will convert it into binary for the hardware, and then code will be implemented on the hardware. So this is the way a stopwatch should behave, if the code is written correctly. 
@@ -301,5 +303,60 @@ When a metal wire segment is fabricated, it can act as an actenna
 - Reactive ion etching causes charges to accumalate on the wire.
   
 - Transistor gates can get damaged during fabrication.
+![Screenshot (73)](https://github.com/user-attachments/assets/04e9b938-97e1-404c-98aa-020c1ae999ee)
+
+To solve this problem we can use-
+
+- Bridging attaches a higher layer intermediary.
+
+       - requires routing.(not there yet!)
+![Screenshot (74)](https://github.com/user-attachments/assets/d156b049-e7e7-452e-bb5f-014479329d79)
+
+- Add antenna diode cell to leak away charges.
+  
+        - Antenna Diodes are provided by the SCL.
+
+- We took a preventive approach
+
+- Add a Fake Antenna Diode next to every cell input after placement
+
+Run the Antenna Checker (Magic) on the routed layout
+
+- If the checker reports a violation on the cell input pin, replace the Fake Diode cell by a real one
+![Screenshot (75)](https://github.com/user-attachments/assets/98528817-02a1-4ae8-bf9e-68ffb01e16ae)
+
+After that-
+
+• RC Extraction: DEF2SPEF
+
+• STA: OpenSTA (OpenROAD)
+
+Then- 
+
+• Magic is used for Design Rules Checking and SPICE Extraction from Layout
+
+• Magic and Netgen are used for LVS
+
+• Extracted SPICE by Magic vs. Verilog netlist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
