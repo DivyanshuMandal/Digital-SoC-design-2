@@ -361,7 +361,20 @@ iii> ls --help : If you just want to know more about Linux
 As we can see, the command is showing a wealth of information!-
 ![image](https://github.com/user-attachments/assets/2e607aa7-47e9-4752-bbba-0293a4792a46)
 
+**Exploring deep!**
 
+![Screenshot (83)](https://github.com/user-attachments/assets/9075a3c6-dbb4-4eba-abdd-227e05496c54)
+
+![Screenshot (84)](https://github.com/user-attachments/assets/4b3b518a-d125-4d8c-b690-e2f85c309625)
+
+![Screenshot (85)](https://github.com/user-attachments/assets/15d78f4e-a8dc-428e-9086-13debb37579d)
+
+The pictures are about the implementation of OpenLANE and Skywater 130nm pdk in linux. We can look into the elements more,judst like this.
+![Screenshot (86)](https://github.com/user-attachments/assets/41d92706-6646-4805-9e24-c596420ac50c)
+
+![Screenshot (87)](https://github.com/user-attachments/assets/0f4805c8-057a-4b3a-bdb2-0178674ac8aa)
+
+![Screenshot (88)](https://github.com/user-attachments/assets/60865ef0-9e81-4bee-b43b-a0255914d2c3)
 
 
 
